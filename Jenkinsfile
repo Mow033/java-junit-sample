@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Test ') {
+    stage('test ') {
       parallel {
         stage('Test ') {
           steps {
@@ -34,7 +34,7 @@ pipeline {
 
     stage('end') {
       steps {
-        sh 'echo "fin des tâches, ça c\'est bien passé" '
+        sh 'echo "fin des tÃ¢ches, Ã§a c\'est bien passÃ©" '
       }
     }
 
