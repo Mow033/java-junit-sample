@@ -4,6 +4,7 @@ pipeline {
     stage('Test ') {
       steps {
         echo 'Hello '
+        dir(path: 'java-junit-sample_master/')
         sh ' mvn clean test'
         junit 'target/surefire-reports/*.xml'
         cleanWs()
